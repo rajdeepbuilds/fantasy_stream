@@ -52,23 +52,25 @@ const Header = () => {
               index < 3 && <HeaderItem name={item.name} Icon={item.icon} />
           )}
         </div>
-        <div className="md:hidden" onClick={()=>setToggle(!toggle)}>
+        <div className="md:hidden" onClick={() => setToggle(!toggle)}>
           <HeaderItem name={""} Icon={HiDotsVertical} />
-          {toggle?
-          <div
-            className="absolute mt-3 bg-[#121212] 
-            border-[1px] border-gray-700 p-3 px-5 py-4">
-            {menu.map(
-              (item, index) =>
-                index > 2 && <HeaderItem name={item.name} Icon={item.icon} />
-            )}
-          </div>:null}
+          {toggle ? (
+            <div
+              className="absolute mt-3 bg-[#121212] 
+            border-[1px] border-gray-700 p-3 px-5 py-4"
+            >
+              {menu.map(
+                (item, index) =>
+                  index > 2 && <HeaderItem name={item.name} Icon={item.icon} />
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
 
       <img
-        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
-        className="w-[40px] rounded-full"
+        src="https://cdn.britannica.com/73/234573-050-8EE03E16/Cristiano-Ronaldo-ceremony-rename-airport-Santa-Cruz-Madeira-Portugal-March-29-2017.jpg"
+        className="w-[38px] h-[40px] rounded-full"
       />
     </div>
   );
