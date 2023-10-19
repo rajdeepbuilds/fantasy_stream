@@ -1,7 +1,7 @@
 
 # Fantasy Stream App
 
-The UI clone of Disney Plus.
+The UI clone of Disney Plus App
 
 
 ## Authors
